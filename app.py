@@ -11,7 +11,8 @@ def home():
 def second_method(arg):
     return render_template('home.html', value = arg)
 
-@app.route('/invoice', methods=['POST'])
+@app.route('/invoice', methods=['POST
+'])
 def invoice():
     conn = sqlite3.connect('invoices.db')
     cur = conn.cursor()
